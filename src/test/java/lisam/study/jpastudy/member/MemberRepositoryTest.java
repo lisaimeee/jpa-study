@@ -11,7 +11,6 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import javax.persistence.EntityManagerFactory;
 
-@ExtendWith(SpringExtension.class)
 @Sql(value = {"classpath:createTeam.sql", "classpath:createMember.sql"})
 @DisplayName("member와 team의 관계가 manyToOne이고, member에서 team을 레이지로딩 설정했을 때 테스트")
 @DataJpaTest
